@@ -65,7 +65,7 @@ pip install .
 ```
 ## 🧑‍💻 Usage
 
-<pre> ```python from image_trisplit import ImageTriSplitter # Example: images and labels images = ['path/to/img1.jpg', 'path/to/img2.jpg', 'path/to/img3.jpg'] labels = ['cat', 'dog', 'cat'] splitter = ImageTriSplitter(images, labels, output_dir='data/processed', log_file='split.log') splitter.split_data(test_size=0.2, valid_size=0.1) ``` </pre>
+pre lang="markdown"> ```python from image_trisplit import ImageTriSplitter # Example: images and labels images = ['path/to/img1.jpg', 'path/to/img2.jpg', 'path/to/img3.jpg'] labels = ['cat', 'dog', 'cat'] splitter = ImageTriSplitter(images, labels, output_dir='data/processed', log_file='split.log') splitter.split_data(test_size=0.2, valid_size=0.1) ``` </pre
 
 ## 📈 Output
 
