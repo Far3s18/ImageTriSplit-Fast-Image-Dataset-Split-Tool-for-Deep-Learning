@@ -54,7 +54,7 @@ data/processed/
 ## 📦 Installation
 
 ```bash
-pip install git+https://github.com/Far3s18/ImageTriSplit.git
+pip install git+https://github.com/Far3s18/ImageTriSplit-Fast-Image-Dataset-Split-Tool-for-Deep-Learning.git
 ```
 
 Or install from a local copy:
