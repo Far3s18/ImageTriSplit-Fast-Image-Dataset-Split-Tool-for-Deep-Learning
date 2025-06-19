@@ -1,0 +1,5 @@
+numpy~=2.3.0
+pandas
+tqdm~=4.67.1
+scikit-learn~=1.7.0
+setuptools~=80.9.0
