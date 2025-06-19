@@ -65,14 +65,28 @@ pip install .
 ```
 ## 🧑‍💻 Usage
 
-pre lang="markdown"> ```python from image_trisplit import ImageTriSplitter # Example: images and labels images = ['path/to/img1.jpg', 'path/to/img2.jpg', 'path/to/img3.jpg'] labels = ['cat', 'dog', 'cat'] splitter = ImageTriSplitter(images, labels, output_dir='data/processed', log_file='split.log') splitter.split_data(test_size=0.2, valid_size=0.1) ``` </pre
+```python
+from image_trisplit import ImageTriSplitter
 
+# Example: images and labels
+images = ['path/to/img1.jpg', 'path/to/img2.jpg', 'path/to/img3.jpg']
+labels = ['cat', 'dog', 'cat']
+
+splitter = ImageTriSplitter(images, labels, output_dir='data/processed', log_file='split.log')
+splitter.split_data(test_size=0.2, valid_size=0.1)
+```
 ## 📈 Output
 
 - ✅ **Images will be copied** to the `train`, `val`, and `test` folders under the specified `output_dir`.
 - 🗃️ **CSV file `split_info.csv`** will be generated, containing the image paths, labels, and their assigned split group.
 
-<pre> ```csv image,label,split /full/path/to/img1.jpg,cat,train /full/path/to/img2.jpg,dog,test /full/path/to/img3.jpg,cat,val ... ``` </pre>
+```csv
+image,label,split
+/full/path/to/img1.jpg,cat,train
+/full/path/to/img2.jpg,dog,test
+/full/path/to/img3.jpg,cat,val
+...
+```
 
 - 🪵 Logs all operations and errors in split.log.
 
